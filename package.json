@@ -1,0 +1,25 @@
+{
+    "name": "foodyak-api",
+    "version": "1.0.0",
+    "description": "Foodyak - React version using next.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sherriously/foodyak-react"
+    },
+    "engines": {
+        "node": "~6.9.1",
+        "npm": ">=3.10.0"
+    },
+    "author": "Sherri",
+    "license": "MIT",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "next": "^1.2.3",
+        "react": "^15.4.2",
+        "react-dom": "^15.4.2"
+    }
+}
