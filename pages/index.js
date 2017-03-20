@@ -1,17 +1,21 @@
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+import Head from 'next/head'
+import Search from '../components/search'
+import Restaurant from '../components/restaurant'
+
 export default () => (
-  <div className='hello'>
-    <p>Hello World</p>
-    <style jsx>{`
-      .hello {
-        font: 15px Helvetica, Arial, sans-serif;
-        background: #eee;
-        padding: 100px;
-        text-align: center;
-        transition: 100ms ease-in background;
-      }
-      .hello:hover {
-        background: #ccc;
-      }
-    `}</style>
-  </div>
+  <MuiThemeProvider>
+    <div>
+      <Head>
+        <title>Foodyak</title>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
+
+      <h1>Search restaurant ratings all at once.</h1>
+      <Search></Search>
+      <Restaurant name="Restaurant 1"></Restaurant>
+    </div>
+  </MuiThemeProvider>
 )
